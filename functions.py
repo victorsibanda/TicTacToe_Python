@@ -1,8 +1,5 @@
 import random
 
-board = []
-
-
 def display_board(board):
     print('\n' * 100)
     print('   |   |')
@@ -18,25 +15,17 @@ def display_board(board):
     print('   |   |')
 
 
-test_board = ['X'] * 10
-
 def player_input():
     marker = ' '
 
     while marker != 'X' and marker != 'O':
         marker = input('Please choose X or O ?:').upper()
 
-        if marker != 'X' or marker != 'O':
-            print('Please Enter X or O')
-
     if marker == 'X':
         return ('X', 'O')
     else:
         return ('O', 'X')
 
-
-
-player1_marker, player2_marker = player_input()
 
 def place_marker(board, marker, position):
     board[position] = marker

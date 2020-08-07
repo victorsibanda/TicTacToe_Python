@@ -1,4 +1,4 @@
-from ticktacktoe import *
+from functions import *
 
 print('Welcome to Tic Tac Toe!')
 
